@@ -7,12 +7,12 @@
   "url": "https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils",
   "source": "https://github.com/flywheel-apps/fsl-fslreorient2std",
   "license": "Other",
-  "flywheel": {
-    "suite": "FSL"
-  },
   "version": "1.0.0",
   "custom": {
-    "docker-image": "flywheel/fsl-fslreorient2std:1.0.0"
+    "docker-image": "flywheel/fsl-fslreorient2std:1.0.0",
+    "flywheel": {
+      "suite": "FSL"
+    }
   },
   "config": {
     "output_name": {
