@@ -4,15 +4,41 @@
   "description": "fslreorient2std is a tool for reorienting the image to match the approximate orientation of the standard template images (MNI152). It only applies 0, 90, 180 or 270 degree rotations. It is not a registration tool. It requires NIfTI images with valid orientation information in them (seen by valid labels in FSLView).  This tool assumes the labels are correct - if not, fix that before using this Gear.",
   "maintainer": "Flywheel <support@flywheel.io>",
   "author": "Analysis Group, FMRIB, Oxford, UK.",
-  "url": "https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils",
-  "source": "https://github.com/flywheel-apps/fsl-fslreorient2std",
+  "url": "https://github.com/flywheel-apps/fsl-fslreorient2std",
+  "source": "https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils",
   "license": "Other",
   "flywheel": {
     "suite": "FSL"
   },
   "version": "1.0.0",
   "custom": {
-    "docker-image": "flywheel/fsl-fslreorient2std:1.0.0"
+    "docker-image": "flywheel/fsl-fslreorient2std:1.0.0",
+    "gear-builder": {
+      "category": "utility"
+    },
+    "flywheel": {
+      "classification": {
+        "species": [
+          "Human"
+        ],
+        "organ": [
+          "Brain"
+        ],
+        "therapeutic_area": [
+          "Neurology",
+          "Psychiatry/Psychology"
+        ],
+        "modality": [
+          "MR"
+        ],
+        "function": [
+          "Image Processing - Functional",
+          "Image Processing - Diffusion",
+          "Image Processing - Structural"
+        ]
+      },
+      "suite": "Image Processing"
+    }
   },
   "config": {
     "output_name": {
